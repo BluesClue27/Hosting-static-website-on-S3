@@ -3,7 +3,7 @@
 This project demonstrates how to use **Terraform** to provision and configure a static website hosted on **AWS S3** and distributed globally via **Amazon CloudFront**.
 
 <p align="center">
-   <img src="/images/infrastructure.png" height=150 >
+   <img src="/images/infrastructure.png" height=200 >
 <p>
 
 ## Features
