@@ -1,0 +1,18 @@
+:root {
+    --background-color: #F2F2F2;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.container {
+    background-color: rgb(227, 227, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: rgb(219, 211, 211);
+}
