@@ -40,7 +40,7 @@ This project was created as a learning exercise to:
 
 1. Content can only be accessed in the SG and US regions as specified
 <p align="center">
-   <img src="/images/geopeeker_POC.png" height=150 >
+   <img src="/images/geopeeker_POC.png" height=250 >
 <p>
 
 ---
