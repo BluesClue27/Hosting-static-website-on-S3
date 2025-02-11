@@ -1,5 +1,6 @@
 data "aws_s3_bucket" "selected_bucket" {
-  bucket = var.bucket_name
+  depends_on = [aws_s3_bucket.randy_static_website_bucket]
+  bucket     = var.bucket_name
 }
 
 resource "aws_cloudfront_origin_access_control" "cf-s3-oac" {
@@ -42,9 +43,9 @@ resource "aws_cloudfront_distribution" "cf-dist" {
 
   restrictions {
     geo_restriction {
-      restriction_type = "whitelist"  # Can either whitelist, blacklist, or none
+      restriction_type = "whitelist" # Can either whitelist, blacklist, or none
       #locations        = []      # If restriction type if none, then an empty array is passed into locations
-      locations        = ["US", "SG"] # Only allows users in Singapore and US to access the site
+      locations = ["US", "SG"] # Only allows users in Singapore and US to access the site
     }
   }
 }
