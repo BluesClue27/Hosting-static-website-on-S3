@@ -71,7 +71,10 @@ To deploy this project:
    terraform apply
    ```
 
-5. **Access the Website:**
+5. **Upload FIles:**
+   Upload your static website folders into the S3 bucket.
+
+6. **Access the Website:**
    Use the CloudFront domain name provided after the Terraform deployment completes.
 
 ---
