@@ -25,7 +25,7 @@ Uses Terraform to automate the deployment and configuration of:
 
 ### Security and Access Control
 
-- Restricts direct access to S3 bucket objects, allowing only access through CloudFront.
+- Restricts direct access to S3 bucket objects, allowing only inbound access through CloudFront.
 - Configures bucket policies to enforce secure communication via AWS services.
 
 ## Why Build This?
